@@ -1,0 +1,51 @@
+using Microsoft.EntityFrameworkCore;
+using RestAPI.Common;
+using RestAPI.DAL;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Register ApplicationDbContext with connection string
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<FacultyMgmtSysContext>(options =>
+        options.UseSqlServer(connectionString));
+
+
+builder.Services.AddMemoryCache(); //In-Memorty Cache
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+//builder.Services.AddOpenApi();
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(MyAllowSpecificOrigins,
+                          policy =>
+                          {
+                              policy.WithOrigins("*")
+                                                  .AllowAnyHeader()
+                                                  .AllowAnyMethod();
+                          });
+});
+builder.Services.AddSingleton<MemoryCaching>(); //In -Memory Cache
+
+var app = builder.Build();
+
+//Enable Cors//
+
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+   // app.MapOpenApi();
+}
+
+app.UseHttpsRedirection();
+
+app.UseAuthorization();
+app.UseCors(MyAllowSpecificOrigins);
+app.MapControllers();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.Run();
