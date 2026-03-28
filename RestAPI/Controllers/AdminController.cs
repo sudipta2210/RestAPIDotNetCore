@@ -170,5 +170,51 @@ namespace RestAPI.Controllers
             }
             return null;
         }
+
+
+        [HttpPost]
+        public CommonEntity InsertNewPaper(string PaperName)
+        {
+            try
+            {
+                var BLLCall = Admin.InsertNewPaper(PaperName);
+                if (BLLCall.IsSuccess)
+                {
+                    return new CommonEntity { Data = null, IsSuccess = true, Message = "Paper has been Inserted", StatusCode = 200 };
+                }
+                else
+                {
+                    return new CommonEntity { Data = null, IsSuccess = false, Message = "Internal Error!!!", StatusCode = 200 };
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return null;
+        }
+
+
+        [HttpPost]
+        public CommonEntity InsertNewTeacher(string TeacherName)
+        {
+            try
+            {
+                var BLLCall = Admin.InsertNewTeacher(TeacherName);
+                if (BLLCall.IsSuccess)
+                {
+                    return new CommonEntity { Data = null, IsSuccess = true, Message = "Teacher has been Inserted", StatusCode = 200 };
+                }
+                else
+                {
+                    return new CommonEntity { Data = null, IsSuccess = false, Message = "Internal Error!!!", StatusCode = 200 };
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return null;
+        }
     }
 }
