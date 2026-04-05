@@ -70,12 +70,9 @@ public partial class FacultyMgmtSysContext : DbContext
             entity.HasIndex(e => e.Username, "UQ__T_Login___536C85E4B82F873A").IsUnique();
 
             entity.Property(e => e.CreatedOn)
-                .HasDefaultValueSql("(getdate())")
+                .HasDefaultValueSql("(getdate())", "DF__T_Login_M__Creat__5FB337D6")
                 .HasColumnType("datetime");
             entity.Property(e => e.ModifiedOn).HasColumnType("datetime");
-            entity.Property(e => e.PasswordHash)
-                .HasMaxLength(255)
-                .IsUnicode(false);
             entity.Property(e => e.Username)
                 .HasMaxLength(100)
                 .IsUnicode(false);

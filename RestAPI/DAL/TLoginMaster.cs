@@ -9,7 +9,7 @@ public partial class TLoginMaster
 
     public string Username { get; set; } = null!;
 
-    public string PasswordHash { get; set; } = null!;
+    public string Password { get; set; } = null!;
 
     public DateTime CreatedOn { get; set; }
 

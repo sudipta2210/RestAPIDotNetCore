@@ -1,0 +1,16 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "CacheSettings": {
+    "CacheAbsoluteDurationMinutes": 30,
+    "CacheSlidingDurationMinutes": 40
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=TANNI\\SQLEXPRESS;Initial Catalog=FacultyMgmtSys;Integrated Security=True;TrustServerCertificate=True"
+  }
+}

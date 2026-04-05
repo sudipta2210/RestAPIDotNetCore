@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 using RestAPI.Business_Layer;
 using RestAPI.Common;
 using RestAPI.Model;
+using System.Security.Cryptography;
 
 namespace RestAPI.Controllers
 {
@@ -41,11 +42,11 @@ namespace RestAPI.Controllers
             //BLLAdmin Admin=new BLLAdmin();
             try
             {
-                var CACHEKEY = "Admin" + "_" +"API";
+                var CACHEKEY = "Admin" + "_" + "API";
 
                 if (_cache.IsExist<object>(CACHEKEY, out var cache)) //check whether any data exists in memory or not against the cachekey 
                 {
-                    var data= _cache.Get<object>(CACHEKEY);
+                    var data = _cache.Get<object>(CACHEKEY);
                     return new CommonEntity
                     {
                         Data = data,
@@ -58,7 +59,7 @@ namespace RestAPI.Controllers
                 var userData = Admin.getAdminData();
                 if (userData.IsSuccess)
                 {
-                    _cache.Set<object>(CACHEKEY,userData.Data, _cacheEntryOptions);
+                    _cache.Set<object>(CACHEKEY, userData.Data, _cacheEntryOptions);
                     return new CommonEntity
                     {
                         Data = userData.Data,
@@ -78,7 +79,7 @@ namespace RestAPI.Controllers
                     };
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
@@ -115,13 +116,13 @@ namespace RestAPI.Controllers
             }
             catch (Exception ex) { }
             return null;
-            
+
         }
 
         [HttpPost]
         public CommonEntity InsertUser(UserEntity Input)
         {
-            return new CommonEntity { Data=null,IsSuccess=true ,Message="User has been Inserted",StatusCode=200 };
+            return new CommonEntity { Data = null, IsSuccess = true, Message = "User has been Inserted", StatusCode = 200 };
         }
 
         [HttpGet]
@@ -213,6 +214,37 @@ namespace RestAPI.Controllers
             catch (Exception ex)
             {
 
+            }
+            return null;
+        }
+
+        [HttpPost]
+        public CommonEntity signup(SignUpEntity Input)
+        {
+            try
+            {
+                var pwd = Input.Password;
+                using (Aes myAes = Aes.Create())
+                {
+                    byte[] encrypted = EncryptDecrypt.Encrypt(pwd, myAes.Key, myAes.IV);
+
+                    string encryptedBase64 = Convert.ToBase64String(encrypted);
+
+                    Input.EncryptedPwd = encryptedBase64;
+                    var BLLCall = Admin.SignUp(Input);
+                    if (BLLCall.IsSuccess)
+                    {
+                        return new CommonEntity { Data = null, IsSuccess = true, Message = "Sign Up Successfull", StatusCode = 200 };
+                    }
+                    else
+                    {
+                        return new CommonEntity { Data = null, IsSuccess = false, Message = "Internal Error!!!", StatusCode = 200 };
+                    }
+                }
+                return new CommonEntity { Data = null, IsSuccess = true, Message = "Sign up successfull", StatusCode = 200 };
+            }
+            catch (Exception ex)
+            {
             }
             return null;
         }

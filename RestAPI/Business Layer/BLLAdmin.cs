@@ -45,7 +45,7 @@ namespace RestAPI.Business_Layer
                     IsSuccess = true
                 };
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
@@ -56,14 +56,14 @@ namespace RestAPI.Business_Layer
         {
             try
             {
-                var FilteredAdminbyGender = userdetails.Where(x => x.Gender == AdminGender).ToList();
+                var FilteredAdminbyGender = userdetails.Where(x => x.Gender.ToUpper().Trim() == AdminGender).ToArray();
                 return new BllOutput()
                 {
                     Data = FilteredAdminbyGender,
                     IsSuccess = true
                 };
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
             }
             return null;
@@ -87,7 +87,7 @@ namespace RestAPI.Business_Layer
                         IsSuccess = true
                     };
                 }
-                   
+
             }
             catch (Exception ex)
             {
@@ -104,12 +104,12 @@ namespace RestAPI.Business_Layer
         {
             try
             {
-                using (var DB=new FacultyMgmtSysContext())
+                using (var DB = new FacultyMgmtSysContext())
                 {
                     var newPaper = new TPaperMst()
                     {
                         PaperName = PaperName,
-                        IsActive=true
+                        IsActive = true
                     };
                     DB.TPaperMsts.Add(newPaper);
 
@@ -130,7 +130,7 @@ namespace RestAPI.Business_Layer
                     };
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
@@ -185,7 +185,7 @@ namespace RestAPI.Business_Layer
                     var newTeacher = new TTeacherMst()
                     {
                         TeacherName = TeacherName,
-                        Dept=newsampledept,
+                        Dept = newsampledept,
                         IsCommon = false,
                         CreatedOn = DateTime.Now,
                         IsActive = true
@@ -214,5 +214,39 @@ namespace RestAPI.Business_Layer
             };
         }
 
+
+        public BllOutput SignUp(SignUpEntity Input)
+        {
+            try
+            {
+                using (var DB = new FacultyMgmtSysContext())
+                {
+                    var newUser = new TLoginMaster()
+                    {
+                       Username=Input.EmailId,
+                       Password=Input.EncryptedPwd,
+                       CreatedOn=DateTime.Now, 
+                       IsActive = true,
+                       CreatedBy=1
+                    };
+                    DB.TLoginMasters.Add(newUser);
+                    DB.SaveChanges();
+                    return new BllOutput()
+                    {
+                        Data = true,
+                        IsSuccess = true
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return new BllOutput()
+            {
+                Data = null,
+                IsSuccess = false
+            };
+        }
     }
 }
