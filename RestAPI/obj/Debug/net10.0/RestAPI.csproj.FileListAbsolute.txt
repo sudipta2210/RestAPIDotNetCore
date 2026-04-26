@@ -156,3 +156,4 @@ D:\DOTNET2025-26\RestAPI\RestAPI\obj\Debug\net10.0\refint\RestAPI.dll
 D:\DOTNET2025-26\RestAPI\RestAPI\obj\Debug\net10.0\RestAPI.pdb
 D:\DOTNET2025-26\RestAPI\RestAPI\obj\Debug\net10.0\RestAPI.genruntimeconfig.cache
 D:\DOTNET2025-26\RestAPI\RestAPI\obj\Debug\net10.0\ref\RestAPI.dll
+D:\DOTNET2025-26\RestAPI\RestAPI\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

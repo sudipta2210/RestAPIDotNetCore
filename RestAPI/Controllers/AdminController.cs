@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using RestAPI.Business_Layer;
@@ -36,6 +37,7 @@ namespace RestAPI.Controllers
                     .SetPriority(CacheItemPriority.High); // Countries are considered critical data.
         }
 
+        [Authorize]
         [HttpGet]
         public CommonEntity GetAdmindetails()
         {
@@ -86,6 +88,7 @@ namespace RestAPI.Controllers
             return null;
         }
 
+        [Authorize]
         [HttpPost]
         public CommonEntity GetAdmindetailsByGender(string Gender)
         {
@@ -119,12 +122,14 @@ namespace RestAPI.Controllers
 
         }
 
+        [Authorize]
         [HttpPost]
         public CommonEntity InsertUser(UserEntity Input)
         {
             return new CommonEntity { Data = null, IsSuccess = true, Message = "User has been Inserted", StatusCode = 200 };
         }
 
+        [Authorize]
         [HttpGet]
         public CommonEntity GetDepartmentDetails()
         {
@@ -172,7 +177,7 @@ namespace RestAPI.Controllers
             return null;
         }
 
-
+        [Authorize]
         [HttpPost]
         public CommonEntity InsertNewPaper(string PaperName)
         {
@@ -195,7 +200,7 @@ namespace RestAPI.Controllers
             return null;
         }
 
-
+        [Authorize]
         [HttpPost]
         public CommonEntity InsertNewTeacher(string TeacherName)
         {
@@ -218,6 +223,7 @@ namespace RestAPI.Controllers
             return null;
         }
 
+
         [HttpPost]
         public CommonEntity signup(SignUpEntity Input)
         {
@@ -234,7 +240,8 @@ namespace RestAPI.Controllers
                     var BLLCall = Admin.SignUp(Input);
                     if (BLLCall.IsSuccess)
                     {
-                        return new CommonEntity { Data = null, IsSuccess = true, Message = "Sign Up Successfull", StatusCode = 200 };
+                        var res=Auth.GenerateToken(Input, _configuration);
+                        return new CommonEntity { Data = new {token=res}, IsSuccess = true, Message = "Sign Up Successfull", StatusCode = 200 };
                     }
                     else
                     {
