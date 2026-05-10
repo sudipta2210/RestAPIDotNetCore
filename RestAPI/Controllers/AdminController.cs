@@ -240,8 +240,19 @@ namespace RestAPI.Controllers
                     var BLLCall = Admin.SignUp(Input);
                     if (BLLCall.IsSuccess)
                     {
-                        var res=Auth.GenerateToken(Input, _configuration);
-                        return new CommonEntity { Data = new {token=res}, IsSuccess = true, Message = "Sign Up Successfull", StatusCode = 200 };
+                        var JWTOKEN=Auth.GenerateToken(Input, _configuration);
+
+                        //ADD JWT TOKEN TO THE COOKIES//
+                        var cookieoptions = new CookieOptions
+                        {
+                            HttpOnly=true,
+                            Secure=true,
+                            SameSite=SameSiteMode.Strict,
+                            Expires=DateTime.UtcNow.AddMinutes(30)
+                        };
+                        Response.Cookies.Append("X-Access-Token", JWTOKEN, cookieoptions);
+                        //ENDS HERE
+                        return new CommonEntity { Data =null , IsSuccess = true, Message = "Sign Up Successfull", StatusCode = 200 };
                     }
                     else
                     {

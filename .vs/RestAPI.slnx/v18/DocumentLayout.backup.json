@@ -7,40 +7,36 @@
       "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\model\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\model\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\common\\memorycaching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\common\\memorycaching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\business layer\\blladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\business layer\\blladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\restapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\restapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\model\\encryptdecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\model\\encryptdecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\dal\\facultymgmtsyscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\dal\\facultymgmtsyscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\model\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\model\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\common\\memorycaching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\common\\memorycaching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\restapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\restapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\model\\encryptdecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\model\\encryptdecrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\model\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|solutionrelative:restapi\\model\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C548A6A0-DE39-ED78-8DB1-A5FD11181523}|RestAPI\\RestAPI.csproj|d:\\dotnet2025-26\\restapi\\restapi\\restapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -62,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,50 +66,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BLLAdmin.cs",
-              "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Business Layer\\BLLAdmin.cs",
-              "RelativeDocumentMoniker": "RestAPI\\Business Layer\\BLLAdmin.cs",
-              "ToolTip": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Business Layer\\BLLAdmin.cs",
-              "RelativeToolTip": "RestAPI\\Business Layer\\BLLAdmin.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAvwFcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T16:26:45.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Auth.cs",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Model\\Auth.cs",
               "RelativeDocumentMoniker": "RestAPI\\Model\\Auth.cs",
               "ToolTip": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Model\\Auth.cs",
               "RelativeToolTip": "RestAPI\\Model\\Auth.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T16:39:33.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\appsettings.json",
               "RelativeDocumentMoniker": "RestAPI\\appsettings.json",
               "ToolTip": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\appsettings.json",
               "RelativeToolTip": "RestAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-04-18T16:32:33.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "FacultyMgmtSysContext.cs",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\DAL\\FacultyMgmtSysContext.cs",
               "RelativeDocumentMoniker": "RestAPI\\DAL\\FacultyMgmtSysContext.cs",
               "ToolTip": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\DAL\\FacultyMgmtSysContext.cs",
               "RelativeToolTip": "RestAPI\\DAL\\FacultyMgmtSysContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvw0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-22T07:43:23.68Z"
             },
@@ -125,14 +109,14 @@
               "RelativeDocumentMoniker": "RestAPI\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Controllers\\AdminController.cs",
               "RelativeToolTip": "RestAPI\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCcAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAP4AAAAAAAAAAADwvwkBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-21T16:19:34.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EncryptDecrypt.cs",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Model\\EncryptDecrypt.cs",
               "RelativeDocumentMoniker": "RestAPI\\Model\\EncryptDecrypt.cs",
@@ -144,15 +128,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Program.cs",
               "RelativeDocumentMoniker": "RestAPI\\Program.cs",
               "ToolTip": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Program.cs",
               "RelativeToolTip": "RestAPI\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAACEAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T16:22:53.644Z"
+              "WhenOpened": "2026-02-21T16:22:53.644Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -168,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "RestAPI",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\RestAPI.csproj",
               "RelativeDocumentMoniker": "RestAPI\\RestAPI.csproj",
@@ -179,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "MemoryCaching.cs",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Common\\MemoryCaching.cs",
               "RelativeDocumentMoniker": "RestAPI\\Common\\MemoryCaching.cs",
@@ -192,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "RestAPI.csproj",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\RestAPI.csproj",
               "RelativeDocumentMoniker": "RestAPI\\RestAPI.csproj",
@@ -204,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "CommonEntity.cs",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Common\\CommonEntity.cs",
               "RelativeDocumentMoniker": "RestAPI\\Common\\CommonEntity.cs",
@@ -216,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "BllOutput.cs",
               "DocumentMoniker": "D:\\DOTNET2025-26\\RestAPI\\RestAPI\\Common\\BllOutput.cs",
               "RelativeDocumentMoniker": "RestAPI\\Common\\BllOutput.cs",
